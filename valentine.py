@@ -67,10 +67,10 @@ HTML = """
 </head>
 <body>
 
-    <img src="/static/Pic 1.jpg" class="corner top-left">
+    <img src="/static/Pic 1.jpeg" class="corner top-left">
     <img src="/static/Pic 2.jpg" class="corner top-right">
     <img src="/static/Pic 3.jpg" class="corner bottom-left">
-    <img src="/static/Pic 4.jpeg" class="corner bottom-right">
+    <img src="/static/Pic 4.jpg" class="corner bottom-right">
 
     <h1>Will you be my Valentine? 💘</h1>
 
