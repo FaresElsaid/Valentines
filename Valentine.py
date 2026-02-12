@@ -1,6 +1,4 @@
-
 from flask import Flask, render_template_string
-import random
 
 app = Flask(__name__)
 
@@ -11,16 +9,18 @@ HTML = """
     <title>Be My Valentine ❤️</title>
     <style>
         body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            margin: 0;
+            padding: 0;
             height: 100vh;
             font-family: Arial, sans-serif;
             background: linear-gradient(to right, #ff758c, #ff7eb3);
             color: white;
             text-align: center;
             overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
 
         h1 {
@@ -49,9 +49,28 @@ HTML = """
             cursor: pointer;
             position: absolute;
         }
+
+        .corner {
+            position: fixed;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+        .top-left { top: 50px; left: 50px; }
+        .top-right { top: 50px; right: 50px; }
+        .bottom-left { bottom: 50px; left: 50px; }
+        .bottom-right { bottom: 50px; right: 50px; }
     </style>
 </head>
 <body>
+
+    <img src="/static/Pic 1.jpg" class="corner top-left">
+    <img src="/static/Pic 2.jpg" class="corner top-right">
+    <img src="/static/Pic 3.jpg" class="corner bottom-left">
+    <img src="/static/Pic 4.jpeg" class="corner bottom-right">
 
     <h1>Will you be my Valentine? 💘</h1>
 
@@ -87,5 +106,4 @@ def home():
     return render_template_string(HTML)
 
 if __name__ == "__main__":
-    app.run(debug=True)
-
+    app.run()
