@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: valentine-site
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn valentine:app
