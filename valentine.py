@@ -68,9 +68,9 @@ HTML = """
 <body>
 
     <img src="/static/Pic 1.jpeg" class="corner top-left">
-    <img src="/static/Pic 2.jpg" class="corner top-right">
-    <img src="/static/Pic 3.jpg" class="corner bottom-left">
-    <img src="/static/Pic 4.jpg" class="corner bottom-right">
+    <img src="/static/Pic 2.jpeg" class="corner top-right">
+    <img src="/static/Pic 3.jpeg" class="corner bottom-left">
+    <img src="/static/Pic 4.jpeg" class="corner bottom-right">
 
     <h1>Will you be my Valentine? 💘</h1>
 
@@ -107,4 +107,5 @@ def home():
 
 if __name__ == "__main__":
     app.run()
+
 
