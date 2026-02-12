@@ -52,8 +52,8 @@ HTML = """
 
         .corner {
             position: fixed;
-            width: 120px;
-            height: 120px;
+            width: 1000px;
+            height: 1000px;
             object-fit: cover;
             border-radius: 16px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.3);
@@ -107,5 +107,6 @@ def home():
 
 if __name__ == "__main__":
     app.run()
+
 
 
